@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS usage examples</title>
+	<link rel="stylesheet" type="text/css" href="https://kentico.github.io/kontent-custom-element-samples/shared/custom-element.css">
+	<style type="text/css">
+		body {
+			margin: 20px;
+		}
+
+		.inverted-bg {
+			padding: 10px;
+			background-color: #1976d2;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS usage examples</h1>
+
+	<h2>Typography</h2>
+	<h1>h1. heading</h1>
+	<h2>h2. heading</h2>
+	<h3>h3. heading</h3>
+	<h4>h4. heading</h4>
+	<p>p. Paragraph</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas libero. Aliquam erat volutpat. Integer lacinia.
+		Nulla non lectus sed nisl molestie malesuada. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem.
+		Ut tempus purus at lorem. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Etiam quis quam.
+		Maecenas aliquet accumsan leo. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.
+		Pellentesque sapien. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Pellentesque arcu.
+	</p>
+
+	<h2>Buttons</h2>
+	<h3>Default button</h3>
+	<button class="btn btn--primary">Default Button</button>
+
+	<h3>Secondary button</h3>
+	<button class="btn btn--secondary">Secondary Button</button>
+	<button class="btn btn--secondary" disabled="">Disabled Secondary Button</button>
+
+	<h3>Destructive button</h3>
+	<button class="btn btn--destructive">Destructive Button</button>
+	<button class="btn btn--destructive" disabled="">Disabled Destructive Button</button>
+
+	<h3>Default button - inverted</h3>
+	<div class="inverted-bg">
+		<button class="btn btn--primary-inverted">Default Button</button>
+		<button class="btn btn--primary-inverted" disabled="">Disabled Default Button</button>
+	</div>
+
+	<h3>Secondary button - inverted</h3>
+	<div class="inverted-bg">
+		<button class="btn btn--secondary-inverted">Secondary Button</button>
+		<button class="btn btn--secondary-inverted" disabled="">Disabled Secondary Button</button>
+	</div>
+
+	<h3>Destructive button - inverted</h3>
+	<div class="inverted-bg">
+		<button class="btn btn--destructive-inverted">Destructive Button</button>
+		<button class="btn btn--destructive-inverted" disabled="">Disabled Destructive Button</button>
+	</div>
+
+	<h3>Button with icon</h3>
+	<button class="btn btn--secondary"><i class="icon-clear-filter btn__icon" aria-hidden="true"></i><span>Clear filter</span></button>
+	<button class="btn btn--secondary"><span>Open different domain</span><i class="icon-arrow-right-top-square btn__endicon" aria-hidden="true"></i></button>
+
+	<h3>Small buttons</h3>
+	<button class="btn btn--primary btn--xs">Default small button</button>
+	<button class="btn btn--secondary btn--xs">Secondary small button</button>
+
+	<h3>Block buttons</h3>
+	<div style="width: 300px;">
+		<button class="btn btn--primary btn--block">Default block button</button>
+		<button class="btn btn--secondary btn--block">Secondary block button</button>
+		<button class="btn btn--primary btn--block btn--with-shortcut-info" data-shortcut="(Tooltip)">Default block button with tooltip</button>
+	</div>
+
+	<h2>Checkboxes and Radio buttons</h2>
+	<div class="option__list">
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--is-checkbox"><span class="option__label">Checkbox</span></label>
+		</div>
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--is-checkbox option--is-selected"><span class="option__label">Checkbox (selected)</span></label>
+		</div>
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--is-checkbox option--is-disabled"><span class="option__label">Checkbox (disabled)</span></label>
+		</div>
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--is-checkbox option--is-selected option--is-disabled"><span class="option__label">Checkbox (selected, disabled)</span></label>
+		</div>
+	</div>
+	<div class="option__list">
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--is-radio-button"><span class="option__label">Radio button</span></label>
+		</div>
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--is-radio-button option--is-selected"><span class="option__label">Radio button (selected)</span></label>
+		</div>
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--is-radio-button option--is-disabled"><span class="option__label">Radio button (disabled)</span></label>
+		</div>
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--is-radio-button option--is-selected option--is-disabled"><span class="option__label">Radio button (selected, disabled)</span></label>
+		</div>
+	</div>
+
+	<h3>Inverted options</h3>
+	<div class="option__list">
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--with-alt-color-scheme option--is-checkbox"><span class="option__label">Checkbox</span></label>
+		</div>
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--with-alt-color-scheme option--is-checkbox option--is-selected"><span class="option__label">Checkbox (selected)</span></label>
+		</div>
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--with-alt-color-scheme option--is-checkbox option--is-disabled"><span class="option__label">Checkbox (disabled)</span></label>
+		</div>
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--with-alt-color-scheme option--is-checkbox option--is-selected option--is-disabled"><span class="option__label">Checkbox (selected, disabled)</span></label>
+		</div>
+	</div>
+	<div class="option__list">
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--with-alt-color-scheme option--is-radio-button"><span class="option__label">Radio button</span></label>
+		</div>
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--with-alt-color-scheme option--is-radio-button option--is-selected"><span class="option__label">Radio button (selected)</span></label>
+		</div>
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--with-alt-color-scheme option--is-radio-button option--is-disabled"><span class="option__label">Radio button (disabled)</span></label>
+		</div>
+		<div class="option__pane">
+			<input class="option__input--hidden">
+			<label class="option option--with-alt-color-scheme option--is-radio-button option--is-selected option--is-disabled"><span class="option__label">Radio button (selected, disabled)</span></label>
+		</div>
+	</div>
+
+	<h2>Dropdown</h2>
+	<div style="width: 300px;">
+		<h3>Default dropdown</h3>
+		<select class="form__dropdown">
+			<option>First option</option>
+			<option>Second option</option>
+			<option>Third option with a slightly longer label that may not necessarily fit</option>
+		</select>
+		<h3>Disabled dropdown</h3>
+		<select class="form__dropdown" disabled="true">
+			<option>First option</option>
+			<option>Second option</option>
+			<option>Third option with a slightly longer label that may not necessarily fit</option>
+		</select>
+		<h3>Dropdown has error</h3>
+		<select class="form__dropdown form__dropdown--has-error">
+			<option>First option</option>
+			<option>Second option</option>
+			<option>Third option with a slightly longer label that may not necessarily fit</option>
+		</select>
+	</div>
+
+	<h2>Dropdown menu</h2>
+	<div style="position: relative; height: 200px;">
+		<div class="dropdown-menu" style="max-width: 200px;">
+			<div class="dropdown-menu__item dropdown-menu__item--with-icon">
+				<span class="dropdown-menu__item-name">Link to submenu</span>
+				<span class="dropdown-menu__item-icon--right"><i class="icon-forward" aria-hidden="true"></i></span>
+			</div>
+			<div class="dropdown-menu__item dropdown-menu__item--with-icon">
+				<span class="dropdown-menu__item-name">Long link to submenu</span>
+				<span class="dropdown-menu__item-icon--right"><i class="icon-forward" aria-hidden="true"></i></span>
+			</div>
+			<div class="dropdown-menu__item dropdown-menu__item--is-destructive-action dropdown-menu__item--with-balloon">
+				<span class="dropdown-menu__item-name">Edit</span></div>
+			<div class="dropdown-menu__item dropdown-menu__item--is-destructive-action dropdown-menu__item--with-balloon dropdown-menu__item--is-disabled disabled"
+				data-balloon="Disabled action"
+				data-balloon-pos="left"
+			><span class="dropdown-menu__item-name">Delete</span></div>
+		</div>
+	</div>
+
+	<h2>Mutli select</h2>
+	<div style="width: 500px;">
+		<div class="multi-select multi-select--has-focus">
+			<div class="multi-select__option-area">
+				<div class="multi-select__option-wrapper">
+					<div class="multi-select__option">
+						<div class="multi-select__option-name">Barista</div>
+						<div class="multi-select__option-remove-button"><i class="icon-remove-multi-select-option"></i></div>
+					</div>
+				</div>
+				<div class="multi-select__search-field"><span class="multi-select__search-text" contenteditable="true"></span></div>
+				<i class="multi-select__drop-down-icon icon-chevron-down" aria-hidden="true"></i>
+				<span class="sr-only">Select options</span></div>
+			<div class="multi-select__dropdown">
+				<div class="multi-select__dropdown-option multi-select__dropdown-option--is-category">
+					<div class="multi-select__dropdown-option-name">Personas</div>
+				</div>
+				<div class="multi-select__dropdown-option">
+					<div class="multi-select__dropdown-option-name">Coffee expert</div>
+				</div>
+				<div class="multi-select__dropdown-option multi-select__dropdown-option--is-selected">
+					<div class="multi-select__dropdown-option-name">
+						<div class="multi-select__dropdown-option-indent">Barista</div>
+					</div>
+				</div>
+				<div class="multi-select__dropdown-option">
+					<div class="multi-select__dropdown-option-name">
+						<div class="multi-select__dropdown-option-indent">Cafe owner</div>
+					</div>
+				</div>
+				<div class="multi-select__dropdown-option">
+					<div class="multi-select__dropdown-option-name">Coffee enthusiast</div>
+				</div>
+				<div class="multi-select__dropdown-option">
+					<div class="multi-select__dropdown-option-name">
+						<div class="multi-select__dropdown-option-indent">Coffee lover</div>
+					</div>
+				</div>
+				<div class="multi-select__dropdown-option">
+					<div class="multi-select__dropdown-option-name">
+						<div class="multi-select__dropdown-option-indent">Coffee blogger</div>
+					</div>
+				</div>
+				<div class="multi-select__dropdown-option multi-select__dropdown-option--is-category">
+					<div class="multi-select__dropdown-option-name">Processing</div>
+				</div>
+				<div class="multi-select__dropdown-option">
+					<div class="multi-select__dropdown-option-name">Wet (Washed)</div>
+				</div>
+				<div class="multi-select__dropdown-option">
+					<div class="multi-select__dropdown-option-name">Dry (Natural)</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2>Inputs</h2>
+	<div style="width: 500px;">
+		<h3>Editable input</h3>
+		<div class="text-field">
+			<input class="text-field__input" type="text" value="Some initial value">
+		</div>
+		<h3>Draggable input</h3>
+		<div class="text-field text-field--has-dragger ">
+			<div class="text-field__dragger-pane">
+				<div class="text-field__dragger">
+					<div class="text-field__dragger-icon"><i class="icon-drag"></i></div>
+				</div>
+			</div>
+			<input class="text-field__input" type="text" value="I am a draggable input">
+		</div>
+		<h3>Invalid input</h3>
+		<div class="text-field text-field--has-error ">
+			<input class="text-field__input" type="text" value="Some invalid value">
+		</div>
+		<h3>Read-only with button</h3>
+		<div class="form__group">
+			<div class="form__input-with-buttons-wrapper">
+				<input class="form__text-field" type="text" autocomplete="off" readonly="true" value="3a42196b-a5b6-4bfd-9b84-c769d5cca9f5">
+				<button class="form__icon-btn" data-balloon="Copy to clipboard" data-balloon-pos="up-left" type="button"><i class="icon-copy"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<h2>Status indicator</h2>
+	<span class="item-status">Required</span>
+	<span class="item-status item-status--is-successful">Required</span>
+	<span class="item-status item-status--failed">Required</span>
+	<span class="item-status item-status--is-missing">Not translated</span>
+
+	<h3>Switch</h3>
+	<div class="switch-wrapper">
+		<input id="switchId" type="checkbox" checked="" hidden="" value="on">
+		<label class="switch" for="switchId"></label>
+		<span class="switch__label">Active</span>
+	</div>
+
+	<h3>Tree</h3>
+	<div class="tree">
+		<ul class="tree__list">
+			<ul class="tree__list tree__list--is-expanded">
+				<li class="tree__node">
+					<div class="tree__item tree__item--is-expanded">
+						<div class="tree__expand-area">
+							<i class="icon-expand-tree tree__expand-action tree__expand-action--is-expanded tree__expand-action--is-disabled"></i>
+						</div>
+						<div class="option__pane">
+							<input class="option__input--hidden"><label class="tree__name tree__name--is-selectable"><span>Home</span></label>
+						</div>
+					</div>
+					<ul class="tree__list tree__list--is-expanded"></ul>
+				</li>
+				<li class="tree__node">
+					<div class="tree__item tree__item--is-expanded">
+						<div class="tree__expand-area"><i class="icon-expand-tree tree__expand-action tree__expand-action--is-expanded"></i>
+						</div>
+						<div class="option__pane">
+							<input class="option__input--hidden"><label class="tree__name tree__name--is-selectable"><span>Products</span></label>
+						</div>
+					</div>
+					<ul class="tree__list tree__list--is-expanded">
+						<li class="tree__node">
+							<div class="tree__item tree__item--is-expanded">
+								<div class="tree__expand-area">
+									<i class="icon-expand-tree tree__expand-action tree__expand-action--is-expanded tree__expand-action--is-disabled"></i>
+								</div>
+								<div class="option__pane">
+									<input class="option__input--hidden"><label class="tree__name tree__name--is-selectable"><span>Coffee</span></label>
+								</div>
+							</div>
+							<ul class="tree__list tree__list--is-expanded"></ul>
+						</li>
+						<li class="tree__node">
+							<div class="tree__item tree__item--is-expanded">
+								<div class="tree__expand-area">
+									<i class="icon-expand-tree tree__expand-action tree__expand-action--is-expanded tree__expand-action--is-disabled"></i>
+								</div>
+								<div class="option__pane">
+									<input class="option__input--hidden"><label class="tree__name tree__name--is-selectable"><span>Brewers</span></label>
+								</div>
+							</div>
+							<ul class="tree__list tree__list--is-expanded"></ul>
+						</li>
+						<li class="tree__node">
+							<div class="tree__item tree__item--is-expanded">
+								<div class="tree__expand-area">
+									<i class="icon-expand-tree tree__expand-action tree__expand-action--is-expanded tree__expand-action--is-disabled"></i>
+								</div>
+								<div class="option__pane">
+									<input class="option__input--hidden"><label class="tree__name tree__name--is-selectable"><span>Accessories</span></label>
+								</div>
+							</div>
+							<ul class="tree__list tree__list--is-expanded"></ul>
+						</li>
+						<li class="tree__node">
+							<div class="tree__item tree__item--is-expanded">
+								<div class="tree__expand-area">
+									<i class="icon-expand-tree tree__expand-action tree__expand-action--is-expanded tree__expand-action--is-disabled"></i>
+								</div>
+								<div class="option__pane">
+									<input class="option__input--hidden"><label class="tree__name tree__name--is-selectable tree__name--is-selected"><span>Grinders</span></label>
+								</div>
+							</div>
+							<ul class="tree__list tree__list--is-expanded"></ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</ul>
+	</div>
+</body>
+</html>
